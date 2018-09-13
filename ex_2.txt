@@ -1,0 +1,27 @@
+import java.util.Scanner;
+import java.util.Random;
+public class ex2 {
+    public static void main(String[]args){
+        Scanner tcl = new Scanner(System.in);
+        System.out.println("Digite a quantidade de valor que deseja inserir");
+        int num1 = tcl.nextInt();
+        int vetor [] = new int [num1];
+        Random aleatorio = new Random();
+        for (int i = 0; i<num1;i++){
+            vetor[i]=tcl.nextInt();
+            boolean encontrado = false;
+            for (int i=0; i<vetor.length;i++){
+                if(vetor[i]==valor){
+                    System.out.println("valor encontrado");
+                    encontrado = true;
+                    break;
+                }
+            }
+            if ( encontrado== false){
+                System.out.println("valor não encontrado");
+            }
+        }
+        
+    }
+}
+
