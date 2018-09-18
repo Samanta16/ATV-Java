@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Troco {
+    public static void main(String[] args) {
+    Scanner tcl = new Scanner(System.in);
+    double recebido = 0;
+    double troco = 0;
+    
+        System.out.println("Valor do poduto");
+        double valor = tcl.nextDouble();
+        
+        System.out.println("Valor entregue pelo cliente");
+        double pago = tcl.nextDouble();
+        
+        if(pago>valor){
+            troco = pago - valor;
+            System.out.println("Seu troco é " + troco);
+           
+        }else{
+            System.out.println("Obrigado pela compra");
+        }
+     
+    }
+     
+}
